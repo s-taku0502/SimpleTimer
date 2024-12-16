@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+header {
+    margin-block-end: auto;
+    background-color: azure;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main {
+    inline-size: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-block-end: 20px;
+}
+
+.timer {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 8px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
