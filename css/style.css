@@ -44,3 +44,8 @@ h1 {
     background: #ccc;
     cursor: not-allowed;
 }
+
+.hour, .minutes, .seconds {
+    font-size: 24px;
+    margin: 0 10px;
+}

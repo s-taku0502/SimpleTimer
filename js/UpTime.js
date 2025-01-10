@@ -43,9 +43,15 @@ start.addEventListener('click', () => {
                 hours++;
             }
         }
+        changeColor();
         updateTimerDisplay();
     }, 1000);
-    
+
+    if (secounds <= 40){
+        minutes.textContent.color = "blue";
+    }
+
+    changeColor();
     updateButtonStates(true, false, false);
 });
 
@@ -55,6 +61,15 @@ stop.addEventListener('click', () => {
     isRunning = false;
     updateButtonStates(false, true, false);
 });
+
+// 秒数が00以上15以下、30秒以上45秒以下の時に文字色を変更する
+const changeColor = () => {
+    if (seconds >= 0 && seconds <= 15 || seconds >= 30 && seconds <= 45) {
+        timerElement.style.color = "red";
+    } else {
+        timerElement.style.color = "black";
+    }
+};
 
 // リセットボタンのイベントリスナー
 reset.addEventListener('click', () => {
